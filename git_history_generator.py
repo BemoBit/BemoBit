@@ -29,6 +29,10 @@ def is_weekday(date):
     """Check if the date is a weekday (not Saturday or Sunday)."""
     return date.weekday() < 5  # Monday=0, Sunday=6
 
+def is_weekend(date):
+    """Check if the date is a weekend (Saturday or Sunday)."""
+    return date.weekday() >= 5  # Saturday=5, Sunday=6
+
 def main():
     # Initialize git repository if not already initialized
     if not os.path.exists('.git'):
@@ -75,6 +79,47 @@ def main():
                 make_commit(date_str, commit_message)
                 
                 print(f"Created commit {i+1}/{num_commits} for {current_date}")
+        
+        elif is_weekend(current_date):
+            # Only 40% of weekends will have commits
+            if random.random() < 0.4:
+                # Fewer commits on weekends (between 1 and 3)
+                num_commits = random.randint(1, 3)
+                
+                for i in range(num_commits):
+                    # Create a timestamp with a random hour for the current date
+                    # More likely to be during non-work hours on weekends
+                    if random.random() < 0.7:
+                        # Evening or early morning hours
+                        hour = random.choice(list(range(6, 9)) + list(range(18, 23)))
+                    else:
+                        # Regular daytime hours
+                        hour = random.randint(10, 16)
+                    
+                    minute = random.randint(0, 59)
+                    second = random.randint(0, 59)
+                    
+                    timestamp = datetime.datetime(
+                        current_date.year, 
+                        current_date.month, 
+                        current_date.day,
+                        hour, minute, second
+                    )
+                    
+                    # Format the date for Git
+                    date_str = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+                    
+                    # Update the file with a unique content
+                    content = f"Weekend update {current_date} - {i+1}/{num_commits}"
+                    update_file(dummy_file, content)
+                    
+                    # Make the commit
+                    commit_message = f"Weekend update {i+1} for {current_date}"
+                    make_commit(date_str, commit_message)
+                    
+                    print(f"Created weekend commit {i+1}/{num_commits} for {current_date}")
+            else:
+                print(f"Skipping weekend day {current_date}")
         
         # Move to the next day
         current_date += timedelta(days=1)
