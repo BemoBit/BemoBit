@@ -37,8 +37,46 @@ if %errorlevel% neq 0 (
     git config user.email "%GIT_EMAIL%"
 )
 
-:: Run the Python script
-python git_history_generator.py
+:: Parse command line arguments
+set START_DATE=
+set END_DATE=
+
+:parse_args
+if "%~1"=="" goto run_script
+if /i "%~1"=="--start-date" (
+    set START_DATE=%~2
+    shift
+    shift
+    goto parse_args
+)
+if /i "%~1"=="--end-date" (
+    set END_DATE=%~2
+    shift
+    shift
+    goto parse_args
+)
+shift
+goto parse_args
+
+:run_script
+:: Run the Python script with optional arguments
+if not "%START_DATE%"=="" (
+    if not "%END_DATE%"=="" (
+        echo Running with custom date range: %START_DATE% to %END_DATE%
+        python git_history_generator.py --start-date %START_DATE% --end-date %END_DATE%
+    ) else (
+        echo Running with custom start date: %START_DATE%
+        python git_history_generator.py --start-date %START_DATE%
+    )
+) else (
+    if not "%END_DATE%"=="" (
+        echo Running with custom end date: %END_DATE%
+        python git_history_generator.py --end-date %END_DATE%
+    ) else (
+        echo Running with default date range (past year)
+        python git_history_generator.py
+    )
+)
 
 echo.
 echo Done! Now you can push this repository to GitHub.

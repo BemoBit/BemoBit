@@ -2,6 +2,7 @@ import os
 import random
 import datetime
 import subprocess
+import argparse
 from datetime import timedelta
 
 def create_file_if_not_exists(filename):
@@ -33,7 +34,20 @@ def is_weekend(date):
     """Check if the date is a weekend (Saturday or Sunday)."""
     return date.weekday() >= 5  # Saturday=5, Sunday=6
 
+def parse_date(date_str):
+    """Parse a date string in YYYY-MM-DD format."""
+    try:
+        return datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+    except ValueError:
+        raise ValueError(f"Invalid date format: {date_str}. Please use YYYY-MM-DD format.")
+
 def main():
+    # Set up command line arguments
+    parser = argparse.ArgumentParser(description='Generate a fake commit history for GitHub.')
+    parser.add_argument('--start-date', help='Start date in YYYY-MM-DD format. Default is 1 year ago.')
+    parser.add_argument('--end-date', help='End date in YYYY-MM-DD format. Default is yesterday.')
+    args = parser.parse_args()
+    
     # Initialize git repository if not already initialized
     if not os.path.exists('.git'):
         subprocess.run(['git', 'init'])
@@ -42,9 +56,17 @@ def main():
     dummy_file = 'activity.txt'
     create_file_if_not_exists(dummy_file)
     
-    # Calculate the date range (1 year ago until yesterday)
-    end_date = datetime.datetime.now().date() - timedelta(days=1)
-    start_date = end_date - timedelta(days=365)
+    # Calculate the date range
+    end_date = datetime.datetime.now().date() - timedelta(days=1)  # Default: yesterday
+    start_date = end_date - timedelta(days=365)  # Default: 1 year ago
+    
+    # Override with command line arguments if provided
+    if args.end_date:
+        end_date = parse_date(args.end_date)
+    if args.start_date:
+        start_date = parse_date(args.start_date)
+    
+    print(f"Generating commit history from {start_date} to {end_date}")
     
     current_date = start_date
     
