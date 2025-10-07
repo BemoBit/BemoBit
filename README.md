@@ -1,157 +1,411 @@
-# Git Light
+<div align="center">
 
-A tool to generate a GitHub contribution history with a natural commit pattern.
+<!-- Animated Header with Glassmorphism Effect -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Behnam%20Moradi&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Backend%20Developer%20|%20Laravel%20Expert%20|%20WordPress%20Specialist&descSize=16&descAlignY=51"/>
 
-## Features
+<!-- Typing Animation -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=A+Creative+Backend+Developer+%F0%9F%9A%80;Building+Scalable+Solutions;Open+to+Remote+Opportunities+%F0%9F%8C%8D" alt="Typing SVG" />
 
-- Creates a realistic commit history that appears as daily activity on GitHub
-- Generates 1-8 random commits on weekdays
-- Occasionally adds 1-3 commits on some weekends (40% of weekend days)
-- Skips commits on other weekend days (60% of weekend days)
-- Customizable date range for commit history
+<br/>
 
-## Usage
+<!-- Social Badges with Glassmorphism -->
+<a href="https://behnammoradi.com" target="_blank">
+  <img src="https://img.shields.io/badge/🌐_Website-behnammoradi.com-00D9FF?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=1a1a2e" alt="Website"/>
+</a>
+<a href="https://www.linkedin.com/in/behnam-moradi/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a1a2e" alt="LinkedIn"/>
+</a>
+<a href="https://t.me/BehnamMoradiDev" target="_blank">
+  <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1a2e" alt="Telegram"/>
+</a>
+<a href="mailto:me@behnammoradi.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1a2e" alt="Email"/>
+</a>
 
-### Basic Usage
+<br/><br/>
 
-Run the `generate_history.bat` file by double-clicking it or from the command line:
+<!-- Profile Views Counter -->
+<img src="https://komarev.com/ghpvc/?username=BemoBit&label=Profile%20Views&color=00D9FF&style=for-the-badge" alt="Profile Views" />
 
-```
-generate_history.bat
-```
+</div>
 
-This will create a year's worth of commit history by default (from 1 year ago until yesterday).
+---
 
-### Custom Date Range
+## 👨‍💻 About Me
 
-You can specify a custom date range using the `--start-date` and `--end-date` parameters:
-
-```
-generate_history.bat --start-date 2023-01-01 --end-date 2023-12-31
-```
-
-You can also specify just one of the parameters:
-
-```
-generate_history.bat --start-date 2023-01-01
-generate_history.bat --end-date 2023-12-31
-```
-
-Dates should be in the format `YYYY-MM-DD`.
-
-## Pushing to GitHub
-
-After generating the commit history, you can push the repository to GitHub with:
-
-```
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-git branch -M main
-git push -u origin main --force
-```
-
-Note: You may need to use `--force` when pushing to override GitHub's history.
-
-## GitHub Badges
-
-You can add badges to your GitHub repository to display various information. Here are some common badges you can add to your README.md:
-
-### Basic Repository Badges
-
-```markdown
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/YOUR_REPO_NAME)
-```
-
-### Activity Badges
-
-```markdown
-![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub contributors](https://img.shields.io/github/contributors/YOUR_USERNAME/YOUR_REPO_NAME)
+```typescript
+const behnam = {
+    username: "BemoBit",
+    location: "Iran 🇮🇷",
+    workPreference: "Remote Work 🌍",
+    currentRole: "Backend Developer @ Planet",
+    experience: "9+ Years",
+    successfulProjects: "30+",
+    passion: "Creative Problem Solving & Clean Code",
+    
+    currentlyWorking: {
+        company: "Planet",
+        position: "Laravel & PHP Backend Developer",
+        duration: "2 Years",
+        focus: ["API Development", "Database Design", "Performance Optimization"]
+    },
+    
+    expertise: [
+        "WordPress Plugin Development",
+        "WordPress Theme Development", 
+        "Laravel Backend Architecture",
+        "RESTful API Design",
+        "Database Optimization"
+    ],
+    
+    featuredProject: {
+        name: "UserPanel Plugin",
+        type: "WordPress Plugin",
+        description: "Advanced User Management System"
+    },
+    
+    lifePhilosophy: "Code with creativity, build with passion! 🎨✨"
+};
 ```
 
-### Size and Download Badges
+---
 
-```markdown
-![GitHub repo size](https://img.shields.io/github/repo-size/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub code size](https://img.shields.io/github/languages/code-size/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub language count](https://img.shields.io/github/languages/count/YOUR_USERNAME/YOUR_REPO_NAME)
-![GitHub top language](https://img.shields.io/github/languages/top/YOUR_USERNAME/YOUR_REPO_NAME)
+## 🛠️ Tech Stack & Tools
+
+<div align="center">
+
+### 💻 Languages & Frameworks
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=php" width="48" height="48" alt="PHP" />
+<br>PHP
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=laravel" width="48" height="48" alt="Laravel" />
+<br>Laravel
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=wordpress" width="48" height="48" alt="WordPress" />
+<br>WordPress
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+<br>JavaScript
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=vue" width="48" height="48" alt="Vue.js" />
+<br>Vue.js
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
+<br>HTML5
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS3" />
+<br>CSS3
+</td>
+</tr>
+</table>
+
+### 🗄️ Databases & Caching
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=mysql" width="48" height="48" alt="MySQL" />
+<br>MySQL
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=redis" width="48" height="48" alt="Redis" />
+<br>Redis
+</td>
+</tr>
+</table>
+
+### 🔧 DevOps & Tools
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+<br>Docker
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
+<br>Git
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=github" width="48" height="48" alt="GitHub" />
+<br>GitHub
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=gitlab" width="48" height="48" alt="GitLab" />
+<br>GitLab
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VS Code" />
+<br>VS Code
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=phpstorm" width="48" height="48" alt="PhpStorm" />
+<br>PhpStorm
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" width="48" height="48" alt="Windsurf" />
+<br>Windsurf
+</td>
+</tr>
+</table>
+
+### 🤖 AI & Modern Tools
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://www.svgrepo.com/show/306500/openai.svg" width="48" height="48" alt="AI" />
+<br>AI Tools
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<!-- GitHub Stats Card with Glassmorphism -->
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=BemoBit&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&ring_color=00D9FF" alt="GitHub Stats"/>
+
+<!-- GitHub Streak Stats -->
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=BemoBit&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideNums=FFFFFF&currStreakNum=FFFFFF&sideLabels=00D9FF" alt="GitHub Streak"/>
+
+<br/><br/>
+
+<!-- Most Used Languages -->
+<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BemoBit&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&langs_count=8" alt="Top Languages"/>
+
+<br/><br/>
+
+<!-- Activity Graph -->
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=BemoBit&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF&area=true&area_color=00D9FF" alt="Contribution Graph"/>
+
+</div>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=BemoBit&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies"/>
+
+</div>
+
+---
+
+## 💼 Professional Highlights
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Experience-9+_Years-00D9FF?style=for-the-badge&logo=calendar&logoColor=white&labelColor=1a1a2e"/>
+<br/><br/>
+<b>Years of Coding</b>
+<br/>
+<sub>Building robust solutions</sub>
+</td>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Projects-30+_Successful-00D9FF?style=for-the-badge&logo=rocket&logoColor=white&labelColor=1a1a2e"/>
+<br/><br/>
+<b>Completed Projects</b>
+<br/>
+<sub>Delivered with excellence</sub>
+</td>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Skill_Level-Advanced-00D9FF?style=for-the-badge&logo=star&logoColor=white&labelColor=1a1a2e"/>
+<br/><br/>
+<b>Expertise Level</b>
+<br/>
+<sub>Master of the craft</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 🎯 What I Do Best
+
+<div align="center">
+
+```mermaid
+mindmap
+  root((Behnam<br/>Moradi))
+    Backend Development
+      Laravel Architecture
+      RESTful APIs
+      Database Design
+      Performance Optimization
+    WordPress Ecosystem
+      Plugin Development
+      Theme Development
+      Custom Solutions
+      WooCommerce
+    DevOps & Tools
+      Docker Containers
+      Git Workflows
+      CI/CD Pipelines
+      Server Management
+    Modern Tech
+      Vue.js Integration
+      AI Tools
+      Microservices
+      Cloud Solutions
 ```
 
-### Custom Badges
+</div>
 
-You can also create custom badges using shields.io:
+---
 
-```markdown
-![Custom Badge](https://img.shields.io/badge/LABEL-MESSAGE-COLOR)
-```
+## 🌟 Featured Projects
 
-For example:
-```markdown
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Made with](https://img.shields.io/badge/made%20with-Python-green)
-```
+<div align="center">
 
-### How to Use
+<!-- Repository Cards -->
+<a href="https://github.com/BemoBit?tab=repositories">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=BemoBit&repo=userpanel-plugin&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF" alt="UserPanel Plugin"/>
+</a>
 
-1. Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub username and repository name.
-2. Copy the desired badge markdown code and paste it at the top of your README.md file.
-3. For custom badges, replace `LABEL`, `MESSAGE`, and `COLOR` with your desired text and color.
+</div>
 
-For more badge options, visit [Shields.io](https://shields.io/).
+---
 
-## GitHub Achievements
+## 📈 Contribution Activity
 
-GitHub Achievements are profile badges that GitHub awards to users based on their activities and contributions. Here's how to optimize your profile to earn these achievements:
+<div align="center">
 
-### Available GitHub Achievements
+<!-- 3D Contribution Graph -->
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=BemoBit&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&icon_color=00D9FF&layout=compact" alt="Coding Activity"/>
 
-1. **🏆 Starstruck**: Awarded when a repository you created gets 16 stars
-2. **🔱 Quickdraw**: Awarded for closing an issue or PR within 5 minutes of opening
-3. **⭐ Galaxy Brain**: Awarded for answering discussions
-4. **📝 Pull Shark**: Awarded for having pull requests merged
-5. **🌱 Pair Extraordinaire**: Awarded for co-authoring commits on merged pull requests
-6. **🛠️ Public Sponsor**: Awarded for sponsoring open source work via GitHub Sponsors
-7. **🔥 Arctic Code Vault Contributor**: Awarded for contributing code to repositories in the 2020 GitHub Archive Program
-8. **🧠 YOLO**: Awarded for merging a pull request without code review
-9. **👾 Mars 2020 Contributor**: Awarded for contributing to repositories used in the Mars 2020 Helicopter Mission
+</div>
 
-### How to Optimize for Achievements
+---
 
-1. **For Starstruck**:
-   - Use this tool to create a realistic commit history
-   - Create valuable repositories that others will want to star
-   - Share your repositories on social media and developer communities
+## 🐍 Watch My Contributions Get Eaten!
 
-2. **For Pull Shark**:
-   - Contribute to open source projects regularly
-   - Submit quality pull requests that are likely to be merged
+<div align="center">
 
-3. **For Pair Extraordinaire**:
-   - Use co-authoring in your commits with the format:
-     ```
-     Co-authored-by: NAME <EMAIL>
-     ```
-   - Collaborate with others on projects
+<!-- GitHub Snake Animation - Neon Style -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BemoBit/BemoBit/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BemoBit/BemoBit/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/BemoBit/BemoBit/output/github-contribution-grid-snake.svg">
+</picture>
 
-4. **For Quickdraw**:
-   - Be active in your repositories
-   - Respond quickly to new issues
+</div>
 
-5. **For Galaxy Brain**:
-   - Participate in GitHub Discussions
-   - Answer questions in repositories that have Discussions enabled
+---
 
-### Using Git Light to Help Earn Achievements
+## 💡 Random Dev Quote
 
-This tool can help you build a consistent commit history, which is essential for showcasing your coding activity. A well-maintained GitHub profile with regular contributions can:
+<div align="center">
 
-1. Make your profile more attractive to potential employers or collaborators
-2. Increase the visibility of your repositories, helping you earn the Starstruck achievement
-3. Demonstrate your commitment to coding and open source
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=true&quote_category=programming" alt="Random Dev Quote"/>
 
-Remember that GitHub Achievements are meant to recognize genuine contributions. While this tool helps create a realistic commit history, the best way to earn achievements is through authentic participation in the GitHub community.
+</div>
+
+---
+
+## ☕ Support My Work
+
+<div align="center">
+
+<p>If you like my work and want to support me, consider buying me a coffee! ☕</p>
+
+<a href="https://buymeacoffee.com/behnammoradi" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200" />
+</a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Support-Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black&labelColor=1a1a2e" alt="Support"/>
+
+</div>
+
+---
+
+## 📫 Let's Connect!
+
+<div align="center">
+
+<p>I'm always open to interesting conversations and collaboration opportunities!</p>
+
+<table>
+<tr>
+<td align="center">
+<a href="https://behnammoradi.com" target="_blank">
+<img src="https://img.icons8.com/fluency/96/000000/domain.png" width="64"/>
+<br/><b>Website</b>
+<br/>behnammoradi.com
+</a>
+</td>
+<td align="center">
+<a href="mailto:me@behnammoradi.com">
+<img src="https://img.icons8.com/fluency/96/000000/gmail.png" width="64"/>
+<br/><b>Email</b>
+<br/>me@behnammoradi.com
+</a>
+</td>
+<td align="center">
+<a href="https://www.linkedin.com/in/behnam-moradi/" target="_blank">
+<img src="https://img.icons8.com/fluency/96/000000/linkedin.png" width="64"/>
+<br/><b>LinkedIn</b>
+<br/>Behnam Moradi
+</a>
+</td>
+<td align="center">
+<a href="https://t.me/BehnamMoradiDev" target="_blank">
+<img src="https://img.icons8.com/fluency/96/000000/telegram-app.png" width="64"/>
+<br/><b>Telegram</b>
+<br/>@BehnamMoradiDev
+</a>
+</td>
+</tr>
+</table>
+
+<br/>
+
+### 💬 Feel free to reach out for:
+- 🚀 Exciting project collaborations
+- 💼 Remote work opportunities
+- 🤝 Technical consultations
+- 🎯 WordPress & Laravel solutions
+- ☕ Just a friendly chat about code!
+
+</div>
+
+---
+
+<div align="center">
+
+<!-- Animated Footer -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling"/>
+
+<br/>
+
+**⭐ From [BemoBit](https://github.com/BemoBit) with 💙**
+
+<br/>
+
+<!-- Last Updated Badge -->
+<img src="https://img.shields.io/badge/Last_Updated-2025--10--07-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e" alt="Last Updated"/>
+
+</div>
